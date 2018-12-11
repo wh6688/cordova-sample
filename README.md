@@ -9,25 +9,17 @@
 1. clone此代码库，并运行
 	
 	```
-  	cordova platform add android
+  	cordova plugin add cordova-plugin-baidumobstatistics --variable IOSAPPID=[your iOS AppKey] --variable ANDROIDAPPID=[your Android AppKey]
   	cordova prepare
   	```
-	
-2. 配置appkey
- 	
- 	修改`AndroidManifest.xml`中appkey为自己的appkey：
- 	
- 	```
- 	<meta-data android:name="BaiduMobAd_STAT_ID" android:value="替换key" />
- 	```
 
-3. 运行
+2. 运行
 	
 	```
   	cordova run android
   	```
 	
-4. 调试
+3. 调试
 	
 	需要在java代码中打开调试开关：
 	
