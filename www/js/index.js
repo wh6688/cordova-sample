@@ -75,45 +75,45 @@ init: function(){
     
     // 百度移动统计DEMO代码
 onEvent1Click: function() {
-    BaiduMobStat.onEvent('event1', '事件一');
+    cordova.plugins.BaiduMobStatistics.onEvent('event1', '事件一');
 },
     
 onEvent2Click: function() {
-    BaiduMobStat.onEventDuration('event2', '事件二', 1000);
+    cordova.plugins.BaiduMobStatistics.onEventDuration('event2', '事件二', 1000);
 },
     
     
 onEvent3StartClick: function() {
-    BaiduMobStat.onEventStart('event3', '事件三');
+    cordova.plugins.BaiduMobStatistics.onEventStart('event3', '事件三');
 },
     
 onEvent3EndClick: function() {
-    BaiduMobStat.onEventEnd('event3', '事件三');
+    cordova.plugins.BaiduMobStatistics.onEventEnd('event3', '事件三');
 },
     
     
 onEvent4Click:function() {
-    BaiduMobStat.onEventWithAttributes('event4', '事件四', {'分类':'分类一'});
+    cordova.plugins.BaiduMobStatistics.onEventWithAttributes('event4', '事件四', {'分类':'分类一'});
 },
     
 onEvent5Click:function() {
-    BaiduMobStat.onEventDurationWithAttributes('event5', '事件五', 1000, {'分类':'分类一'});
+    cordova.plugins.BaiduMobStatistics.onEventDurationWithAttributes('event5', '事件五', 1000, {'分类':'分类一'});
 },
     
 onEvent6StartClick: function() {
-    BaiduMobStat.onEventStart('event6', '事件六');
+    cordova.plugins.BaiduMobStatistics.onEventStart('event6', '事件六');
 },
     
 onEvent6EndClick: function() {
-    BaiduMobStat.onEventEndWithAttributes('event6', '事件六', {'分类':'分类一'});
+    cordova.plugins.BaiduMobStatistics.onEventEndWithAttributes('event6', '事件六', {'分类':'分类一'});
 },
     
 onPageStart: function() {
-    BaiduMobStat.onPageStart('页面一');
+    cordova.plugins.BaiduMobStatistics.onPageStart('页面一');
 },
     
 onPageEnd: function() {
-    BaiduMobStat.onPageEnd('页面一');
+    cordova.plugins.BaiduMobStatistics.onPageEnd('页面一');
 },
     
 };
